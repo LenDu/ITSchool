@@ -1,4 +1,4 @@
-package Week_1_2.Task_1;
+package week_1_2.task_1;
 
 import java.util.Scanner;
 
@@ -34,8 +34,7 @@ public class Task6 {
             }
         }
 
-        System.out.println();
-        System.out.print("6.1 Odd numbers: ");
+        System.out.print("\n6.1 Odd numbers: ");
 
         for (int i = 0; i < num.length; i++) {
             if (toInt[i] % 2 != 0) {
@@ -43,12 +42,9 @@ public class Task6 {
             }
         }
 
-        System.out.println();
-
-
         //6.2. Наибольшее и наименьшее число.
 
-        System.out.print("6.2 Max number: ");
+        System.out.print("\n6.2 Max number: ");
         int max = toInt[0];
 
         for (int i = 1; i < toInt.length; i++) {
@@ -70,7 +66,6 @@ public class Task6 {
 
         System.out.println(min);
 
-
 //        6.3. Числа, которые делятся на 3 или на 9.
         System.out.print("6.3 Divided into 3 or 9: ");
 
@@ -80,10 +75,8 @@ public class Task6 {
             }
         }
 
-        System.out.println();
-
 //        6.4. Числа, которые делятся на 5 и на 7.
-        System.out.print("6.4 Divided into 5 and 7: ");
+        System.out.print("\n6.4 Divided into 5 and 7: ");
 
         for (int i = 0; i < toInt.length; i++) {
             if ((toInt[i] % 5 == 0) && (toInt[i] % 7 == 0)) {
@@ -91,10 +84,8 @@ public class Task6 {
             }
         }
 
-        System.out.println();
-
 //        6.5. Все трехзначные числа, в десятичной записи которых нет одинаковых цифр.
-        System.out.print("6.5 3-digit not equal numbers: ");
+        System.out.print("\n6.5 3-digit not equal numbers: ");
 
         for (int i = 0; i < num.length; i++) {
             if (num[i].length() == 3) {
@@ -104,16 +95,13 @@ public class Task6 {
             }
         }
 
-        System.out.println();
-
 //        6.6. «Счастливые» числа (сумма первой половины цифр равна сумме второй половины цифр)
-        System.out.print("6.6 Happy numbers: ");
+        System.out.print("\n6.6 Happy numbers: ");
 
         for (int i = 0; i < num.length; i++) {
             if (num[i].length() % 2 == 0) {
                 int count = num[i].length() / 2;
-                int sum1 = 0;
-                int sum2 = 0;
+                int sum1 = 0, sum2 = 0;
 
                 for (int j = 0; j < count; j++) {
                     sum1 += Character.digit(num[i].charAt(j), 10);
@@ -126,11 +114,9 @@ public class Task6 {
             }
         }
 
-        System.out.println();
-
 //        6.7. Элементы, которые равны полусумме соседних элементов.
 
-        System.out.print("6.7 A half of sum: ");
+        System.out.print("\n6.7 A half of sum: ");
 
         for (int i = 0; i < toInt.length - 2; i++) {
             if (toInt[i + 1] == (double)(toInt[i] + toInt[i + 2]) / 2) {

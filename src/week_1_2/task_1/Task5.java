@@ -1,4 +1,4 @@
-package Week_1_2.Task_1;
+package week_1_2.task_1;
 
 /**
  * Created by Lena on 11/7/2017.
@@ -17,8 +17,7 @@ public class Task5 {
             prod *= arg;
         }
 
-        System.out.println();
-        System.out.println("Args sum = " + sum);
+        System.out.println("\nArgs sum = " + sum);
         System.out.println("Args product = " + prod);
     }
 }
