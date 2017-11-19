@@ -1,4 +1,4 @@
-package week_1_2.task_1;
+package basics.task_1;
 
 /**
  * Created by Lena on 11/7/2017.

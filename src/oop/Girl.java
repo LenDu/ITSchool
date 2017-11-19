@@ -1,4 +1,4 @@
-package week_4;
+package oop;
 
 /**
  * Created by Lena on 11/19/2017.
