@@ -22,14 +22,14 @@ public class Task22 {
                 }
             }
         }
-        System.out.println("Numbers sorted by length ascending: " + Arrays.toString(arr));
+        System.out.println("2a. Numbers sorted by length ascending: " + Arrays.toString(arr));
 
         for (int i = 0; i < arr.length / 2; i++) {
             String tmp = arr[i];
             arr[i] = arr[arr.length - 1 - i];
             arr[arr.length - 1 - i] = tmp;
         }
-        System.out.println("Numbers sorted by length descending: " + Arrays.toString(arr));
+        System.out.println("2b. Numbers sorted by length descending: " + Arrays.toString(arr));
 
     }
 }

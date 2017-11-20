@@ -24,8 +24,8 @@ public class Task21 {
                 maxNum = num;
             }
         }
-        System.out.printf("The shortest number - %s, it contains - %d digits. " +
-                "\nThe longest number - %s, it contains - %d digits.\n", minNum, minSize, maxNum, maxSize);
+        System.out.printf("1a. The shortest number - %s, it contains - %d digits. " +
+                "\n1b The longest number - %s, it contains - %d digits.\n", minNum, minSize, maxNum, maxSize);
     }
 
 }
