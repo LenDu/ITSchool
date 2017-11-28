@@ -40,6 +40,10 @@ public class Task2Main {
         Task27 task27 = new Task27();
         System.out.println("7. The 1st number with unique digits (in sorted array): " + task27.getNumberWithUniqueDigits(input));
 
+        Task28 task28 = new Task28();
+        System.out.println("8. Numbers from 1 to k in matrix N x N:");
+        task28.outputMatrix(9);
+
 
     }
 }
