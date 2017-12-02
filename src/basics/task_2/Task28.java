@@ -9,13 +9,6 @@ import java.util.Scanner;
  */
 public class Task28 {
 
-    void outputMatrix (int k){
-        int mSize = countMatrixSize(k);
-        int[][] matrix = setMatrixElements(mSize, k);
-        for (int i = 0; i < mSize; i++) {
-            System.out.println(Arrays.toString(matrix[i]));
-        }
-    }
 
     int countMatrixSize(int k) {
         int matrixSize = (int) Math.sqrt(k);

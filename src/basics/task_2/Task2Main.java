@@ -42,8 +42,11 @@ public class Task2Main {
 
         Task28 task28 = new Task28();
         System.out.println("8. Numbers from 1 to k in matrix N x N:");
-        task28.outputMatrix(9);
-
+        int k = 9;
+        int mSize = task28.countMatrixSize(k);
+        int[][] matrix = task28.setMatrixElements(mSize,k);
+        OutputMatrix out = new OutputMatrix();
+        out.outputMatrix(matrix);
 
     }
 }
