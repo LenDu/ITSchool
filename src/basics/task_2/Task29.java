@@ -44,32 +44,41 @@ public class Task29 {
         OutputMatrix out = new OutputMatrix();
         out.outputMatrix(randomMatrix);
 
-        System.out.println(" 9.1. Упорядочить строки матрицы в порядке возрастания значений:");
+        System.out.println("\n9.1. Упорядочить строки матрицы в порядке возрастания значений:");
         Task291 task291 = new Task291();
         int[][] sortedRows = task291.sortRowsInAscendingOrder(randomMatrix);
         out.outputMatrix(sortedRows);
 
-        System.out.println(" 9.1. Упорядочить столбцы матрицы в порядке возрастания значений:");
-        int[][] sortedColumns = task291.sortColumnsInAscendingOrder(randomMatrix);
+        System.out.println("\n9.1. Упорядочить столбцы матрицы в порядке возрастания значений:");
+        int [][] sortedColumns = task291.sortColumnsInAscendingOrder(randomMatrix);
         out.outputMatrix(sortedColumns);
 
         int k = 2;
-        System.out.println("9.2. Выполнить циклический сдвиг заданной матрицы на " + k + " позиций вправо:");
+        System.out.println("\n9.2. Выполнить циклический сдвиг заданной матрицы на " + k + " позиций вправо:");
         Task292 task292 = new Task292();
-        int [][] shiftedRight = task292.shiftMatrixRight(sortedColumns, k);
+        int [][] shiftedRight = task292.shiftMatrixRight(randomMatrix, k);
         out.outputMatrix(shiftedRight);
 
-        System.out.println("9.2. Выполнить циклический сдвиг заданной матрицы на " + k + " позиций влево:");
-        int [][] shiftedLeft = task292.shiftMatrixLeft(sortedColumns, k);
+        System.out.println("\n9.2. Выполнить циклический сдвиг заданной матрицы на " + k + " позиций влево:");
+        int [][] shiftedLeft = task292.shiftMatrixLeft(randomMatrix, k);
         out.outputMatrix(shiftedLeft);
 
-        System.out.println("9.2. Выполнить циклический сдвиг заданной матрицы на " + k + " позиций вниз:");
-        int [][] shiftedDown = task292.shiftMatrixDown(sortedColumns, k);
+        System.out.println("\n9.2. Выполнить циклический сдвиг заданной матрицы на " + k + " позиций вниз:");
+        int [][] shiftedDown = task292.shiftMatrixDown(randomMatrix, k);
         out.outputMatrix(shiftedDown);
 
-        System.out.println("9.2. Выполнить циклический сдвиг заданной матрицы на " + k + " позиций вверх:");
-        int[][] shiftedUp = task292.shiftMatrixUp(sortedColumns, k);
+        System.out.println("\n9.2. Выполнить циклический сдвиг заданной матрицы на " + k + " позиций вверх:");
+        int[][] shiftedUp = task292.shiftMatrixUp(randomMatrix, k);
         out.outputMatrix(shiftedUp);
+
+        System.out.println("\n9.3. Найти и вывести наибольшее число возрастающих элементов матрицы, идущих подряд.");
+        Task293 task293 = new Task293();
+        int[] increasedElems = task293.searchMaxAmountOfIncreasedElems(randomMatrix);
+        System.out.println(Arrays.toString(increasedElems));
+
+        System.out.println("\n9.3. Найти и вывести наибольшее число убывающих элементов матрицы, идущих подряд.");
+        int[] decreasedElems = task293.searchMaxAmountOfDecreasedElems(randomMatrix);
+        System.out.println(Arrays.toString(decreasedElems));
     }
 
     int inputMatrixSize() {
